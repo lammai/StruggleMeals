@@ -11,7 +11,12 @@ const Card = props => {
             <div className="card-body text-dark">
                 <h4 className="card-title">{props.title}</h4>
                 <p className="card-text text-secondary">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur corporis debitis eum illo, porro sed veniam voluptatibus. Consequuntur ea et expedita fuga laborum nam non officia ratione soluta voluptatum?
+                    <dt className="breakfast">Breakfast</dt>
+                        <dd className="recipe1">- {props.recipe1Title}</dd>
+                    <dt className="lunch">Lunch</dt>
+                        <dd className="recipe1">- {props.recipe2Title}</dd>
+                    <dt className="dinner">Dinner</dt>
+                        <dd className="recipe1">- {props.recipe3Title}</dd>
                 </p>
             </div>
         </div>
