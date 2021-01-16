@@ -1,0 +1,54 @@
+html {
+    font-family: 'Roboto Light', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to top left, #439b9c, #71eeb5);
+    margin: 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    padding: 0 1.5rem;
+}
+
+.cards {
+    display: flex;
+}
+
+.card {
+    border-radius: 12px;    /* rounded corners*/
+
+/*    Hover off animation so it smooth
+        when mouse move away*/
+    transition: transform 0.3s ease;
+    box-shadow: 5px 10px 20px 10px rgba(0,0,0,0.253)!important;
+}
+
+.card:hover {
+    z-index: 1;
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+    box-shadow: 5px 10px 30px 20px rgba(0,0,0,0.253)!important;
+}
+
+.card-body {
+    padding: 1.2rem 0 !important;
+}
+
+.card-text {
+    text-align: left;
+    font-size: 0.9rem;
+    padding: 0.1rem 1.2rem;
+}
+
+/* For image at the top of the card in case we still need it*/
+
+/*.overflow {*/
+/*    overflow: hidden;*/
+/*}*/
+
+
+/*.card-img-top {*/
+/*    border-radius: 12px;*/
+/*}*/
