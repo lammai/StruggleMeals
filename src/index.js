@@ -13,12 +13,14 @@ import './components/slider-style.css'
 import Header from './components/common/header/Header';
 import About from "./components/About";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {Button} from "bootstrap/js/src";
+import "./button-styles.css";
+import { Button } from "./components/Button";
 
 const Home = () => (
     <div>
         <p className="budget text-center">
             Choose your budget
-
         </p>
         <Slider defaultValue = {50}
                 max = {4}
@@ -26,6 +28,39 @@ const Home = () => (
                 marks = {mark}
                 valueLabelDisplay="auto"
                 onCharge={getValue}/>
+
+        <Button
+            onClick={() => {
+                console.log("Yummy Breakfast");
+            }}
+            type="button"
+            buttonStyle="btn--primary--outline"
+            buttonSize="btn--large"
+        >
+            Breakfast
+        </Button>
+
+        <Button
+            onClick={() => {
+                console.log("Healthy Lunch");
+            }}
+            type="button"
+            buttonStyle="btn--primary--outline"
+            buttonSize="btn--large"
+        >
+            Lunch
+        </Button>
+
+        <Button
+            onClick={() => {
+                console.log("Perfect Dinner");
+            }}
+            type="button"
+            buttonStyle="btn--primary--outline"
+            buttonSize="btn--large"
+        >
+            Dinner
+        </Button>
         <Card />
     </div>
 );
