@@ -2,7 +2,6 @@ import React from 'react';
 import { Navbar } from "../../common";
 
 import './Header.css';
-import sadness from "../../../sadness.png";
 
 function Header (){
     return (

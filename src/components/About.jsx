@@ -2,16 +2,18 @@ import React from 'react';
 
 import Header from "./common/header";
 import './common/header/Header.css';
-
+import './common/header/Header.css';
+import {Navbar} from "./common";
 
 function About(){
     return(
-      <div>
-          <section className="header-top__navigation">
-              <Header />
-          </section>
-          <h1>About Page</h1>
-      </div>
+        <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+        }}>
+            <Header/>
+        </div>
     );
 }
 
