@@ -19,12 +19,7 @@ class Cards extends Component {
         console.log("Leave!")
     }
 
-
-
     render() {
-
-
-
         return (
             <div
             className="cards">
@@ -60,7 +55,6 @@ class Cards extends Component {
                                      recipe1Title="Apple Pie Overnight Oats"
                                      recipe2Title="Bean and Cheese Burritos"
                                      recipe3Title="Spinach Chickpea and Quinoa Salad"/>}
-
                      </div>
 
 
