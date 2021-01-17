@@ -29,33 +29,22 @@ const Home = () => (
                 onCharge={getValue}/>
 
         <Button
-            onClick={() => {
-                console.log("Yummy Breakfast");
-            }}
+            style={{ marginCenter: "auto"}}
             type="button"
-            buttonStyle="btn--primary--outline"
             buttonSize="btn--large"
         >
             Breakfast
         </Button>
 
         <Button
-            onClick={() => {
-                console.log("Healthy Lunch");
-            }}
             type="button"
-            buttonStyle="btn--primary--outline"
             buttonSize="btn--large"
         >
             Lunch
         </Button>
 
         <Button
-            onClick={() => {
-                console.log("Perfect Dinner");
-            }}
             type="button"
-            buttonStyle="btn--primary--outline"
             buttonSize="btn--large"
         >
             Dinner

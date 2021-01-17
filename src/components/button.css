@@ -1,10 +1,6 @@
 :root {
     --primary: #4628ff;
     --warning: #ffd028;
-    --danger: #eb3f27;
-    --success: #75fa83;
-    --white: #fdfdfd;
-    --dark: #181717;
 }
 
 .btn {
@@ -13,24 +9,16 @@
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    margin-left: 27rem;
+    margin-right: -27rem;
+    margin-bottom: 4rem;
+    width: 14%;
+    background-color: var(--primary);
+    color: var(--white);
 }
 
 .btn:hover{
     transform: translateY(3px);
-}
-
-/* Button Colors and Styles */
-
-.btn--primary--solid {
-    background-color: var(--primary);
-    color: var(--white);
-    border: none;
-}
-
-.btn--warning--solid {
-    background-color: var(--danger);
-    color: var(--dark);
-    border: none;
 }
 
 /* Button Size */
@@ -44,6 +32,7 @@
     padding: 15px 30ps;
     font-size: 20px;
 }
+
 
 
 
