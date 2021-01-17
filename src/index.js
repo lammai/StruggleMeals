@@ -1,12 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
-import About from "./components/About";
-
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css'
-// import Counter from './components/counter';
 // import Card from "./components/cardDesign";
 import Card from "./components/cards"
 import './App.css';
@@ -18,26 +15,23 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 const Home = () => (
     <div>
-        <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-        }}>
-            <Header/>
+
+        {/*TODO: fix THIS*/}
+        <div style = {{width:500,marginLeft:'30vw', marginBottom:'9rem', display:'block', position:'relative'}}>
+            <p style= {{marginBottom: "10px"}}>
+                Choose your budget
+            </p>
+            <Slider className='slider'
+                    defaultValue = {50}
+                    max = {4}
+                    step = {null}
+                    marks = {mark}
+                    valueLabelDisplay="auto"
+                    onCharge={getValue}/>
         </div>
         <Card />
     </div>
 );
-
-ReactDOM.render(
-  <React.StrictMode>
-
-      <Router>
-          <Switch>
-            <Route path={"/about-us"} component={About}/>
-            <Route path={"/"} component={Home}/>
-          </Switch>
-      </Router>
 
 const mark = [
 {
@@ -69,20 +63,21 @@ console.warn(val)
 
 ReactDOM.render(
   <React.StrictMode>
-      <Header />
-      <div style = {{width:500,marginLeft:'30vw', marginBottom:'9rem', display:'block', position:'relative'}}>
-          <p style= {{marginBottom: "10px"}}>
-              Choose your budget
-          </p>
-          <Slider className='slider'
-            defaultValue = {50}
-            max = {4}
-            step = {null}
-            marks = {mark}
-            valueLabelDisplay="auto"
-            onCharge={getValue}/>
-     </div>
-      <Card />
+      <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+      }}>
+          <Header/>
+      </div>
+
+      <Router>
+          <Switch>
+              <Route path={"/about-us"} component={About}/>
+              <Route path={"/"} component={Home}/>
+          </Switch>
+      </Router>
+
   </React.StrictMode>,
   document.getElementById('root')
 );

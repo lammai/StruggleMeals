@@ -2,8 +2,6 @@ import React from 'react';
 
 import Header from "./common/header";
 import './common/header/Header.css';
-import './common/header/Header.css';
-import {Navbar} from "./common";
 
 function About(){
     return(
@@ -12,7 +10,7 @@ function About(){
             alignItems: 'center',
             justifyContent: 'center',
         }}>
-            <Header/>
+            {/*<Header/>*/}
         </div>
     );
 }
