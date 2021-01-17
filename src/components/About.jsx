@@ -1,12 +1,19 @@
 import React from 'react';
 
-import App  from '../App.css';
+import Header from "./common/header";
+import './common/header/Header.css';
+import './common/header/Header.css';
+import {Navbar} from "./common";
 
 function About(){
     return(
-      <div>
-          <h1>About Page</h1>
-      </div>
+        <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+        }}>
+            <Header/>
+        </div>
     );
 }
 
