@@ -24,16 +24,15 @@ class Cards extends Component {
             <div
             className="cards">
                 <div className="myCard">
-                    <RecipeCard title="asd"
-                                al="Image 1"
-                                ingredients="asdasdasdsdasdasds"
-                    />
+                    {/*<RecipeCard title="asd"*/}
+                    {/*            al="Image 1"*/}
+                    {/*            ingredients="asdasdasdsdasdasds"*/}
+                    {/*/>*/}
                     <Card imgsrc={img1} title="Monday"
                           recipe1Title="Curried Chickpeas with Spinach"
                           recipe2Title="Pork and Peanut Dragon Noodles"
                           recipe3Title="One Pot Chili Pasta"
                     />
-
                 </div>
                      <div
 
