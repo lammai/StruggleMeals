@@ -43,11 +43,11 @@ console.warn(val)
 ReactDOM.render(
   <React.StrictMode>
       <Header />
-      <div style = {{width:500, margin:40}}>
-          <p style= {{marginBottom: "4cm"}}>
+      <div style = {{width:500,marginLeft:'30vw', marginBottom:'9rem', display:'block', position:'relative'}}>
+          <p style= {{marginBottom: "10px"}}>
               Choose your budget
           </p>
-          <Slider
+          <Slider className='slider'
             defaultValue = {50}
             max = {4}
             step = {null}
