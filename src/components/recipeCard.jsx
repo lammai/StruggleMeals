@@ -5,6 +5,7 @@ const RecipeCard = props => {
     const exampleIngredients = ["bread", "eggs", "idk", "asd"];
     const listIngredients = exampleIngredients.map((ingredient) =>
         <li>{ingredient}</li>
+    //    make key = id when we use api
     );
     // Maybe we can do this?
     // onMouseEnter={ change Card }
