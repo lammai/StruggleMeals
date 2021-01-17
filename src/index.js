@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './App.css';
+import About from "./components/About";
+
 import './index.css';
-// import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css'
 // import Counter from './components/counter';
@@ -12,6 +14,31 @@ import Slider from 'rc-slider';
 import "rc-slider/assets/index.css";
 import Header from './components/common/header/Header';
 import About from "./components/About";
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+const Home = () => (
+    <div>
+        <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+        }}>
+            <Header/>
+        </div>
+        <Card />
+    </div>
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+
+      <Router>
+          <Switch>
+            <Route path={"/about-us"} component={About}/>
+            <Route path={"/"} component={Home}/>
+          </Switch>
+      </Router>
+
 const mark = [
 {
 value:0,
