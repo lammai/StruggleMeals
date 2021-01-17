@@ -1,19 +1,69 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './App.css';
 import './index.css';
-// import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css'
-// import Counter from './components/counter';
 // import Card from "./components/cardDesign";
 import Card from "./components/cards"
 import './App.css';
 import Slider from 'rc-slider';
 import "rc-slider/assets/index.css";
-
+import './components/slider-style.css'
+import Header from './components/common/header/Header';
+import About from "./components/About";
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {Button} from "bootstrap/js/src";
 import "./button-styles.css";
 import { Button } from "./components/Button";
 
+const Home = () => (
+    <div>
+        <p className="budget text-center">
+            Choose your budget
+        </p>
+        <Slider defaultValue = {50}
+                max = {4}
+                step = {null}
+                marks = {mark}
+                valueLabelDisplay="auto"
+                onCharge={getValue}/>
+
+        <Button
+            onClick={() => {
+                console.log("Yummy Breakfast");
+            }}
+            type="button"
+            buttonStyle="btn--primary--outline"
+            buttonSize="btn--large"
+        >
+            Breakfast
+        </Button>
+
+        <Button
+            onClick={() => {
+                console.log("Healthy Lunch");
+            }}
+            type="button"
+            buttonStyle="btn--primary--outline"
+            buttonSize="btn--large"
+        >
+            Lunch
+        </Button>
+
+        <Button
+            onClick={() => {
+                console.log("Perfect Dinner");
+            }}
+            type="button"
+            buttonStyle="btn--primary--outline"
+            buttonSize="btn--large"
+        >
+            Dinner
+        </Button>
+        <Card />
+    </div>
+);
 
 const mark = [
 {
@@ -42,68 +92,21 @@ const getValue =(e, val) => {
 console.warn(val)
 }
 
-
 ReactDOM.render(
   <React.StrictMode>
-          <div className="App">
-          </div>
-
-     <div style = {{width:500, margin:40,
-               display: 'flex',
-               alignItems: 'center',
-               justifyContent: 'center',
-
-     }}>
-     <p style= {{marginBottom: "4rem"}}>
-         Choose your budget
-     </p>
-      <Slider
-        defaultValue = {0}
-        max = {4}
-        step = {null}
-        marks = {mark}
-        valueLabelDisplay="auto"
-        onCharge={getValue}
-      />
-
-              <Button
-              onClick={() => {
-                console.log("Yummy Breakfast");
-              }}
-              type="button"
-              buttonStyle="btn--primary--outline"
-              buttonSize="btn--large"
-              >
-              Breakfast
-              </Button>
-
-              <Button
-              onClick={() => {
-                console.log("Healthy Lunch");
-              }}
-              type="button"
-              buttonStyle="btn--primary--outline"
-              buttonSize="btn--large"
-              >
-              Lunch
-              </Button>
-
-              <Button
-              onClick={() => {
-                console.log("Perfect Dinner");
-              }}
-              type="button"
-              buttonStyle="btn--primary--outline"
-              buttonSize="btn--large"
-              >
-              Dinner
-              </Button>
-
-     </div>
-
-  <Card />
-
-      <Card />
+      <Router>
+          <Switch>
+              <Route path={"/about-us"} component={About}/>
+              <Route path={"/"} component={Home}/>
+          </Switch>
+      </Router>
+      <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+      }}>
+          <Header/>
+      </div>
   </React.StrictMode>,
   document.getElementById('root')
 );

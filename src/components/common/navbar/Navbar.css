@@ -4,11 +4,14 @@
 }
 
 .navbar-item {
-    display: flex;
+    display: flow;
+    font-weight: 10000;
+    font-size: 20px;
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     color: inherit;
     text-direction: inherit;
     text-transform: uppercase;
