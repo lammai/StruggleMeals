@@ -31,6 +31,12 @@ body {
     box-shadow: 5px 10px 15px 10px rgba(0,0,0,0.253)!important;
 }
 
+.recipeCard {
+    border-radius: 12px;    /* rounded corners*/
+    background: white;
+    /*box-shadow: 5px 10px 15px 10px rgba(0,0,0,0.253)!important;*/
+}
+
 .card:hover {
     z-index: 1;
     transform: scale(2.1) translateY(4rem);
