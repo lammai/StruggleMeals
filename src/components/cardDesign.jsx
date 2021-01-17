@@ -2,6 +2,9 @@ import React from "react";
 import './card-style.css'
 
 const Card = props => {
+    // Maybe we can do this?
+    // onMouseEnter={ change Card }
+    // onMouseLeave={ back to og Card}
     return (
         <div className="card text-center shadow">
             {/* Adding image at the top of the card*/}
