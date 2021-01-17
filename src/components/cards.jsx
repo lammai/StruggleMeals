@@ -10,16 +10,16 @@ class Cards extends Component {
         return (
             <div className="cards">
                 <div className="myCard">
-                    <div className="cardPair flex-lg-row">
-                        <RecipeCard title="asd"
-                                    al="Image 1"
-                                    ingredients="asdasdasdas"
-                        />
-                        <Card imgsrc={img1} title="Monday"
-                              recipe1Title="Curried Chickpeas with Spinach"
-                              recipe2Title="Pork and Peanut Dragon Noodles"
-                              recipe3Title="One Pot Chili Pasta"/>
-                    </div>
+                    <RecipeCard title="asd"
+                                al="Image 1"
+                                ingredients="asdasdasdsdasdasds"
+                    />
+                    <Card imgsrc={img1} title="Monday"
+                          recipe1Title="Curried Chickpeas with Spinach"
+                          recipe2Title="Pork and Peanut Dragon Noodles"
+                          recipe3Title="One Pot Chili Pasta"
+                    />
+
                 </div>
                 <div className="myCard">
                     <Card imgsrc={img2} title="Tuesday"
