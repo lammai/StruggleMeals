@@ -3,23 +3,61 @@ import Card from "./cardDesign";
 import img1 from '../assets/howcuttingdo.jpg';
 import img2 from '../assets/iStock-10131071761-1.jpg';
 import img3 from '../assets/pizzabeer.jpg';
+import RecipeCard from "./recipeCard";
+import logo from "../logo.svg";
 
 class Cards extends Component {
+
+    state = {
+        visible:true
+    };
+
+    triggerEnterAction(){
+        console.log("Entered!");
+    }
+    triggerLeaveAction(){
+        console.log("Leave!")
+    }
+
     render() {
         return (
-            <div className="cards">
+            <div
+            className="cards">
                 <div className="myCard">
+                    {/*<RecipeCard title="asd"*/}
+                    {/*            al="Image 1"*/}
+                    {/*            ingredients="asdasdasdsdasdasds"*/}
+                    {/*/>*/}
                     <Card imgsrc={img1} title="Monday"
                           recipe1Title="Curried Chickpeas with Spinach"
                           recipe2Title="Pork and Peanut Dragon Noodles"
-                          recipe3Title="One Pot Chili Pasta"/>
+                          recipe3Title="One Pot Chili Pasta"
+                    />
                 </div>
-                <div className="myCard">
-                    <Card imgsrc={img2} title="Tuesday"
+                     <div
+
+                         onMouseEnter={()=>
+                             this.setState({visible: false})
+                         }
+                         onMouseLeave={()=>
+                             this.setState({visible: true})
+                         }
+
+                         className="myCard">
+                         {this.state.visible ? <Card imgsrc={img2} title="Tuesday"
                           recipe1Title="Beef and Cabbage Stir Fry"
                           recipe2Title="Bowties and Broccoli"
                           recipe3Title="Poor Man's Burrito Bowls"/>
-                </div>
+
+
+                             : <Card imgsrc={img2} title="Sunday"
+                                     recipe1Title="Apple Pie Overnight Oats"
+                                     recipe2Title="Bean and Cheese Burritos"
+                                     recipe3Title="Spinach Chickpea and Quinoa Salad"/>}
+                     </div>
+
+
+
                 <div className="myCard">
                     <Card imgsrc={img3} title="Wednesday"
                           recipe1Title="Creamy Tuna Pasta with Peas and Parmesan"
