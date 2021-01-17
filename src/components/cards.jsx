@@ -1,18 +1,14 @@
 import React, {Component} from "react";
 import Card from "./cardDesign";
-
 import img1 from '../assets/howcuttingdo.jpg';
 import img2 from '../assets/iStock-10131071761-1.jpg';
 import img3 from '../assets/pizzabeer.jpg';
 
 class Cards extends Component {
-
-
-
     render() {
         return (
             <div className="cards">
-                <div className="myCard" onMouseOver={this}>
+                <div className="myCard">
                     <Card imgsrc={img1} title="Monday"
                           recipe1Title="Curried Chickpeas with Spinach"
                           recipe2Title="Pork and Peanut Dragon Noodles"
