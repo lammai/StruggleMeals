@@ -10,7 +10,6 @@ function About(){
             alignItems: 'center',
             justifyContent: 'center',
         }}>
-            {/*<Header/>*/}
         </div>
     );
 }
