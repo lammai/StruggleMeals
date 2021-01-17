@@ -14,11 +14,18 @@ import Header from './components/common/header/Header';
 import About from "./components/About";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
+import MyComp from "./testAPI"
+
 const Home = () => (
     <div>
         <p className="budget text-center">
             Choose your budget
+
         </p>
+        <div>
+            <MyComp/>
+        </div>
+
         <Slider defaultValue = {50}
                 max = {4}
                 step = {null}
