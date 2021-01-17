@@ -7,10 +7,13 @@ import 'bootstrap/dist/css/bootstrap.css'
 // import Counter from './components/counter';
 // import Card from "./components/cardDesign";
 import Card from "./components/cards"
+import Header from './components/common/header/Header';
+import About from "./components/About";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Card />
+      <Header />
+      <Card />
   </React.StrictMode>,
   document.getElementById('root')
 );
