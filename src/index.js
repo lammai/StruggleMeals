@@ -15,13 +15,20 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 const Home = () => (
     <div>
-        <Header/>
+        <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+        }}>
+            <Header/>
+        </div>
         <Card />
     </div>
 );
 
 ReactDOM.render(
   <React.StrictMode>
+
       <Router>
           <Switch>
             <Route path={"/about-us"} component={About}/>
