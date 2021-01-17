@@ -11,15 +11,16 @@ const RecipeCard = props => {
     // onMouseEnter={ change Card }
     // onMouseLeave={ back to og Card}
 
-
     return (
-        <div className="recipeCard text-center">
+        <div className="card text-center">
             <div className="overflow">
                 <img src={props.imgsrc} alt={props.al} className="recipe-img-top"/>
             </div>
-            <div className="recipeCard-body text-dark">
-                <h4 className="recipeCard-title text-center">{props.title}</h4>
-                <ul>{listIngredients}</ul>
+            <div className="card-body text-dark">
+                <h4 className="card-title text-center">{props.title}</h4>
+                <p className="card-text text-secondary">
+                    <ul>{listIngredients}</ul>
+                </p>
             </div>
         </div>
     );

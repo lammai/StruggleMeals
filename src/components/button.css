@@ -1,5 +1,5 @@
 :root {
-    --primary: #4628ff;
+    --primary: #1b5469;
     --warning: #ffd028;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .btn--large {
-    padding: 15px 30ps;
+    padding: 15px 30px;
     font-size: 20px;
 }
 

@@ -17,7 +17,7 @@ import "./button-styles.css";
 import { Button } from "./components/Button";
 
 const Home = () => (
-    <div>
+    <div style={{marginBottom:"12rem"}}>
         <p className="budget text-center">
             Choose your budget
         </p>
