@@ -3,16 +3,23 @@ import Card from "./cardDesign";
 import img1 from '../assets/howcuttingdo.jpg';
 import img2 from '../assets/iStock-10131071761-1.jpg';
 import img3 from '../assets/pizzabeer.jpg';
+import RecipeCard from "./recipeCard";
 
 class Cards extends Component {
     render() {
         return (
             <div className="cards">
                 <div className="myCard">
-                    <Card imgsrc={img1} title="Monday"
-                          recipe1Title="Curried Chickpeas with Spinach"
-                          recipe2Title="Pork and Peanut Dragon Noodles"
-                          recipe3Title="One Pot Chili Pasta"/>
+                    <div className="cardPair flex-lg-row">
+                        <RecipeCard title="asd"
+                                    al="Image 1"
+                                    ingredients="asdasdasdas"
+                        />
+                        <Card imgsrc={img1} title="Monday"
+                              recipe1Title="Curried Chickpeas with Spinach"
+                              recipe2Title="Pork and Peanut Dragon Noodles"
+                              recipe3Title="One Pot Chili Pasta"/>
+                    </div>
                 </div>
                 <div className="myCard">
                     <Card imgsrc={img2} title="Tuesday"
