@@ -1,5 +1,7 @@
 .header {
-    margin-top: 20px;
+    margin-top: 0;
+    position: fixed;
+    top: 20px;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -8,20 +10,19 @@
 .header-top {
     display: flex;
     width: 100%;
-    height: 80px;
+    height: 70px;
 }
 
 .header-top__logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
 }
 
 .header-logo {
     color: inherit;
     text-decoration: inherit;
-    font-family: RobotoThin;
+    font-family: RobotoThin, sans-serif;
     font-size: 100px;
 }
 
@@ -35,6 +36,7 @@
     width: 100%;
     border: none;
     height: 2px;
+    top: 10px;
     margin-top: 2px;
     background-color: black;
 }
@@ -44,5 +46,14 @@
     flex: 1;
     flex-direction: row;
     justify-content: center;
-    margin-right: 55px;
+    margin-right: 5px;
+}
+
+.separateLine {
+    width: 100%;
+    border: none;
+    height: 2px;
+    margin-top: 2px;
+    background-color: black;
+
 }
