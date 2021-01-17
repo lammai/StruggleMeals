@@ -13,7 +13,6 @@ import './components/slider-style.css'
 import Header from './components/common/header/Header';
 import About from "./components/About";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import {Button} from "bootstrap/js/src";
 import "./button-styles.css";
 import { Button } from "./components/Button";
 
