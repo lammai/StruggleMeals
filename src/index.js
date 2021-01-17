@@ -11,6 +11,10 @@ import './App.css';
 import Slider from 'rc-slider';
 import "rc-slider/assets/index.css";
 
+import "./button-styles.css";
+import { Button } from "./components/Button";
+
+
 const mark = [
 {
 value:0,
@@ -37,28 +41,68 @@ label:"$150"
 const getValue =(e, val) => {
 console.warn(val)
 }
-import Header from './components/common/header/Header';
-import About from "./components/About";
+
 
 ReactDOM.render(
   <React.StrictMode>
+          <div className="App">
+          </div>
 
-     <div style = {{width:500, margin:40}}>
-     <p style= {{marginBottom: "4cm"}}>
+     <div style = {{width:500, margin:40,
+               display: 'flex',
+               alignItems: 'center',
+               justifyContent: 'center',
+
+     }}>
+     <p style= {{marginBottom: "4rem"}}>
          Choose your budget
      </p>
       <Slider
-        defaultValue = {50}
+        defaultValue = {0}
         max = {4}
         step = {null}
         marks = {mark}
         valueLabelDisplay="auto"
         onCharge={getValue}
       />
+
+              <Button
+              onClick={() => {
+                console.log("Yummy Breakfast");
+              }}
+              type="button"
+              buttonStyle="btn--primary--outline"
+              buttonSize="btn--large"
+              >
+              Breakfast
+              </Button>
+
+              <Button
+              onClick={() => {
+                console.log("Healthy Lunch");
+              }}
+              type="button"
+              buttonStyle="btn--primary--outline"
+              buttonSize="btn--large"
+              >
+              Lunch
+              </Button>
+
+              <Button
+              onClick={() => {
+                console.log("Perfect Dinner");
+              }}
+              type="button"
+              buttonStyle="btn--primary--outline"
+              buttonSize="btn--large"
+              >
+              Dinner
+              </Button>
+
      </div>
 
   <Card />
-      <Header />
+
       <Card />
   </React.StrictMode>,
   document.getElementById('root')
