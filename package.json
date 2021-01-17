@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "rc-slider": "^9.7.1",
     "react-router-dom": "^5.2.0"
   }
 }
