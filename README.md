@@ -1,3 +1,5 @@
+#StruggleMeals
+![currentUI](src/assets/currentUI.png)
 ## Inspiration
 Although there is plentiful information available about any particular recipe, sometimes choosing the recipe is the hardest part, especially on a limited budget.
 ## What it does
